@@ -100,12 +100,11 @@ let indekas = 0;
 
 
 // Kaip skaiciuoti indeksa? +
-// Kaip pildyt masyva? +
+// Kaip pildyt masyva?
 
 while (skaicius != 0) { //123456
     
    skaitmuo = skaicius % 10;//102030
-   skMasyvas[indekas] = skaitmuo;
    // 0 
    //102030
    //102033 / 10 = 10203
@@ -116,10 +115,6 @@ while (skaicius != 0) { //123456
    console.log("Skaitmuo: "+ skaitmuo); 
    indekas++;
 }
-
-
-console.log("Sk masyvas:");
-console.log(skMasyvas);
 
 console.log("Suma: "+ suma) ;
 

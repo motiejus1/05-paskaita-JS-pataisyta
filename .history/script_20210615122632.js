@@ -118,8 +118,6 @@ while (skaicius != 0) { //123456
 }
 
 
-console.log("Sk masyvas:");
-console.log(skMasyvas);
 
 console.log("Suma: "+ suma) ;
 

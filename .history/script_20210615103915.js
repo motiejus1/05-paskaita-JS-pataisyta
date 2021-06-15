@@ -83,110 +83,28 @@ document.querySelectorAll(".test").addEventListener
 console.log("Zingsniai: " + zingsniai);
 
 
-// Išveskite n-ženklio skaičiaus visus skaitmenis atskirai ir suraskite jų sumą. 
-// Kiekviena skaitmenį surašome į masyvą
+// Išveskite n-ženklio skaičiaus visus skaitmenis atskirai ir suraskite jų sumą.
 
 let skaicius, skaitmuo, suma;
 
-const skMasyvas = [];
-//  skMasyvas[0] = "Reiksme"; 
-//  skMasyvas[1] = "Reiksme1";
-
-console.log(skMasyvas);
-
 suma = 0;
 skaicius = 102030;
-let indekas = 0;
 
 
-// Kaip skaiciuoti indeksa? +
-// Kaip pildyt masyva? +
 
 while (skaicius != 0) { //123456
-    
+
+   // [3 + [5]  
    skaitmuo = skaicius % 10;//102030
-   skMasyvas[indekas] = skaitmuo;
    // 0 
    //102030
    //102033 / 10 = 10203
 
-   skaicius = parseInt(skaicius / 10); //parseFloat
+   skaicius = parseInt(skaicius / 10); 
    suma += skaitmuo;
    
    console.log("Skaitmuo: "+ skaitmuo); 
-   indekas++;
+
 }
-
-
-console.log("Sk masyvas:");
-console.log(skMasyvas);
 
 console.log("Suma: "+ suma) ;
-
-
-let vaisius = "Obuolys";
-let vaisius1 = "Kriause";
-let vaisius2 = "Slyva";
-
-//ES6 mums leidzia elgtis taip. Const
-// const masyvas = ["Obuolys", "Kriause", "Slyva"];
-
-// 0 - Obuolys, 1 - Kriause, 2 - Slyva 
-let masyvas = ["Obuolys", "Kriause", "Slyva"];
-
-let masyvas1 = [40, 15, 20, 30, 7];
-
-const masyvas2 = [40, "Kriause", 20.2, 30, "Slyva"];
-
-
-// 0 1 2 3
-let mas = [vaisius, vaisius1, vaisius2, masyvas];
- 
-let informacija;
-
-informacija = mas[3]; //masyvas
-
-console.log(informacija[0]);
-
-masyvas2[0] = "Kazkas tai kitas"; // ???
-
-// console.log(masyvas2[4]);
-
-// console.log(masyvas);
-// console.log(masyvas1);
-// console.log(masyvas2);
-
-
-console.log(mas[3]);
-console.log(mas);
-
-// Pasirinkti bet kokio masyvo paskutini elementa
-
-let info1 = [1,2,3,4,5,6,7,8,9];
-let info2 = ['1','2','3','4','5','6','7','8'];
-
-console.log(info1.length); // 9 - 1 = 8
-console.log(info2.length); // 8 - 1 = 7
-
-console.log(info1[info1.length - 1]);
-console.log(info2[info2.length - 1]);
-
-let info3 = ['1','2','3','4','5','6','7','8', 1,2,3,4,5,6,7,8,9];
-
-// Kiekviena masyvo elementa isvesti atskirai i console log
-
-// info3[0,1,2,3, n+1]
-// info3[0]
-
-// for(let i = 0; i<= 16; i++)
-// for(let i = 0; i<= info3.length - 1; i++)
-let info3Count = info3.length;
-
-for(let i = 0; i< info3.length ; i++) {
-    // console.log(i);
-    console.log(info3[i]);
-
-}
-
-
-//......

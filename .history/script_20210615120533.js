@@ -87,39 +87,24 @@ console.log("Zingsniai: " + zingsniai);
 // Kiekviena skaitmenį surašome į masyvą
 
 let skaicius, skaitmuo, suma;
-
-const skMasyvas = [];
-//  skMasyvas[0] = "Reiksme"; 
-//  skMasyvas[1] = "Reiksme1";
-
-console.log(skMasyvas);
-
+let 
 suma = 0;
 skaicius = 102030;
-let indekas = 0;
 
-
-// Kaip skaiciuoti indeksa? +
-// Kaip pildyt masyva? +
 
 while (skaicius != 0) { //123456
-    
+  
    skaitmuo = skaicius % 10;//102030
-   skMasyvas[indekas] = skaitmuo;
    // 0 
    //102030
    //102033 / 10 = 10203
 
-   skaicius = parseInt(skaicius / 10); //parseFloat
+   skaicius = parseInt(skaicius / 10); 
    suma += skaitmuo;
    
    console.log("Skaitmuo: "+ skaitmuo); 
-   indekas++;
+
 }
-
-
-console.log("Sk masyvas:");
-console.log(skMasyvas);
 
 console.log("Suma: "+ suma) ;
 

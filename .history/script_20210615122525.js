@@ -100,7 +100,7 @@ let indekas = 0;
 
 
 // Kaip skaiciuoti indeksa? +
-// Kaip pildyt masyva? +
+// Kaip pildyt masyva?
 
 while (skaicius != 0) { //123456
     
@@ -116,10 +116,6 @@ while (skaicius != 0) { //123456
    console.log("Skaitmuo: "+ skaitmuo); 
    indekas++;
 }
-
-
-console.log("Sk masyvas:");
-console.log(skMasyvas);
 
 console.log("Suma: "+ suma) ;
 
